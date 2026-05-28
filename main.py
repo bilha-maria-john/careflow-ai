@@ -1,10 +1,10 @@
 import streamlit as st
 
-from agents.report_agent import generate_visit_report
-from agents.compliance_agent import generate_incident_report, generate_medication_log
-from agents.scheduling_agent import suggest_schedule_adjustment
-from agents.summary_agent import generate_family_summary
-from database.firestore import save_record, get_all_records
+from app.agents.report_agent import generate_visit_report
+from app.agents.compliance_agent import generate_incident_report, generate_medication_log
+from app.agents.scheduling_agent import suggest_schedule_adjustment
+from app.agents.summary_agent import generate_family_summary
+from app.database.firestore import save_record, get_all_records
 
 st.set_page_config(page_title="CareFlow AI", page_icon="🩺", layout="wide")
 
